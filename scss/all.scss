@@ -1,0 +1,158 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+  background: $BGcolor;
+  font-family: $font;
+}
+.header {
+  width: 1170px;
+  margin: auto;
+  margin-bottom: 77px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  padding-top: 58px;
+  margin-bottom: 48px;
+  img {
+    width: 78px;
+    height: 58px;
+  }
+}
+.header {
+  h1 {
+    margin: auto;
+    font-size: 35px;
+    color: $h1color;
+    font-family: $fontroboto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 22px;
+    font-weight: bold;
+  }
+}
+.span1 {
+  display: flex;
+  justify-content: center;
+  color: $spancolor;
+  font-size: 15px;
+  margin-bottom: 90px;
+}
+.header {
+  .span1 {
+    position: relative;
+  }
+}
+.span1 {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 2px;
+    background: $bgafter;
+    top: 30px;
+  }
+}
+.list {
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    li {
+      margin-left: 21px;
+      margin-right: 21px;
+
+      a {
+        text-decoration: none;
+        color: $spancolor;
+        font-size: 15px;
+        height: 45px;
+      }
+    }
+  }
+}
+.list {
+  ul {
+    .active a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 45px;
+      width: 61px;
+      background: #ff3150;
+      color: #ffbd0d;
+      border-radius: 8px;
+    }
+  }
+}
+
+.maincontent {
+  margin: auto;
+  width: 1170px;
+  height: 429px;
+}
+.mainli {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  div {
+    width: 271px;
+    height: 200px;
+    background: #ffffff;
+    margin-bottom: 28px;
+  }
+}
+.maincontent {
+  margin-bottom: 58px;
+  .mainli {
+    .firstblock {
+      background: #33d1cc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .work {
+        color: #ffffff;
+        font-size: 20px;
+        margin-bottom: 14px;
+        .design {
+          color: #1c3b4d;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+.more {
+  margin: auto;
+  width: 1170px;
+  ul {
+    display: flex;
+    justify-content: center;
+    li {
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: #ffc501;
+        height: 45px;
+        width: 61px;
+        background: #ff3150;
+        border-radius: 16px;
+        height: 45px;
+        width: 208px;
+        font-family: 15px;
+      }
+    }
+  }
+}
